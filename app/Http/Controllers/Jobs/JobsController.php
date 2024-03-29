@@ -65,7 +65,7 @@ class JobsController extends Controller
 
         ]);
 
-        if(    $saveJob){
+        if($saveJob){
 
             return redirect('/jobs/single/'.$request ->job_id.'')->with('save', 'job saved successfully');
         }

@@ -75,6 +75,12 @@
                                   </a>
 
 
+                                  
+                                  <a class="dropdown-item" href="{{ route('edit.details') }}">
+                                    Update Details
+                                  </a>
+
+
                                   <a class="dropdown-item" href="{{ route('applications') }}">
                                     Applications
                                   </a>
