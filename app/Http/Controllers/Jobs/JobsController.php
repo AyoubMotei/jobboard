@@ -35,8 +35,15 @@ class JobsController extends Controller
         ->where('user_id', Auth::user()->id)
         ->count();
 
+
+
+        //check if user applied to job
+        $appliedJob = Application::where('user_id', Auth::user()->id)
+        ->where ('job_id',$id)
+        ->count();
+
     
-        return view('jobs.single',compact('job', 'relatedJobs', 'relatedJobsCount', 'savedJob'));
+        return view('jobs.single',compact('job', 'relatedJobs', 'relatedJobsCount', 'savedJob', 'appliedJob'));
     }
 
     public function saveJob(Request $request){
@@ -53,16 +60,13 @@ class JobsController extends Controller
 
         ]);
 
-        if($saveJob){
+        if(    $saveJob){
 
             return redirect('/jobs/single/'.$request ->job_id.'')->with('save', 'job saved successfully');
         }
 
     }
- 
-
-    //apply job
-
+   
 
     public function jobApply(Request $request){
 
@@ -104,7 +108,10 @@ class JobsController extends Controller
         
 
     }
- 
+
+    
+
+
 
 
 
