@@ -29,4 +29,23 @@ class HomeController extends Controller
 
         return view('home', compact('jobs', 'totaljobs'));
     }
+
+
+
+    public function about()
+    {
+       
+        return view('pages.about');
+    }
+
+
+    public function contact()
+    {
+       
+        return view('pages.contact');
+    }
+
+
+
+
 }
