@@ -35,3 +35,6 @@ Route::get('/users/profile', [App\Http\Controllers\Users\UsersController::class,
 
 Route::get('/users/applications', [App\Http\Controllers\Users\UsersController::class, 'applications'])->name('applications');
 
+
+Route::get('/users/savedjobs', [App\Http\Controllers\Users\UsersController::class, 'savedJobs'])->name('saved.jobs');
+
