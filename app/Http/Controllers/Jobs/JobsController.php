@@ -76,52 +76,80 @@ class JobsController extends Controller
     public function jobApply(Request $request){
 
 
-        if($request->cv == 'No cv'){
+            if($request->cv == 'No cv'){
 
-            return redirect('/jobs/single/'.$request ->job_id.'')->with('apply', 'upload your CV first in the profile page');
+                return redirect('/jobs/single/'.$request ->job_id.'')->with('apply', 'upload your CV first in the profile page');
 
-        } else{
+            } else{
 
-            $applyJob = Application::create([
+                $applyJob = Application::create([
 
-               'cv' => Auth::user()->cv,
-                'job_id' => $request ->job_id,
-                'user_id' => Auth::user()->id,
-                'job_image' => $request ->job_image,
-                'job_title' => $request ->job_title,
-                'job_region' => $request ->job_region,
-                'job_type' => $request ->job_type,
-                'company' => $request ->company,
-    
-            ]);
+                'cv' => Auth::user()->cv,
+                    'job_id' => $request ->job_id,
+                    'user_id' => Auth::user()->id,
+                    'job_image' => $request ->job_image,
+                    'job_title' => $request ->job_title,
+                    'job_region' => $request ->job_region,
+                    'job_type' => $request ->job_type,
+                    'company' => $request ->company,
+        
+                ]);
 
-            if($applyJob){
-    
-                return redirect('/jobs/single/'.$request ->job_id.'')->with('applied', 'you applied to this job successfully');
-            }
-    
+                if($applyJob){
+        
+                    return redirect('/jobs/single/'.$request ->job_id.'')->with('applied', 'you applied to this job successfully');
+                }}
+
+
+
+    }
+
+
+    public function search(Request $request)
+        {
+            
+        Request()->validate([
+
+            
+            "job_title" => "required",
+            "job_region" => "required",
+            "job_type" => "required",
            
 
+        ]);
+
+            $job_title = $request->get('job_title');
+            $job_region = $request->get('job_region');
+            $job_type = $request->get('job_type');
 
 
+            $searches = Job::select()->where('job_title','like',"%$job_title%")
+            ->where('job_region','like',"%$job_region%")
+            ->where('job_type','like',"%$job_type%")
+            ->get();
+            
+
+            return view('jobs.search', compact('searches'));
         }
 
 
 
-       
-
+    
+    public function about()
+        {
         
+            return view('pages.about');
+        }
 
-    }
 
+    public function contact()
+        {
+        
+            return view('pages.contact');
+        }
     
 
-
-
-
-
-
-
+    
 
     
  
