@@ -8,6 +8,7 @@ use App\Models\Job\Job;
 use App\Models\Category\Category;
 use App\Models\Job\JobSaved;
 use App\Models\Job\Application;
+use App\Models\Job\Search;
 use Auth;
 
 class JobsController extends Controller
@@ -117,6 +118,13 @@ class JobsController extends Controller
            
 
         ]);
+
+
+
+            Search::Create([
+
+                "keyword" => $request->job_title
+            ]);
 
             $job_title = $request->get('job_title');
             $job_region = $request->get('job_region');
