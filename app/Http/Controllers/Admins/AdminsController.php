@@ -9,7 +9,7 @@ use App\Models\Job\Job;
 use App\Models\Category\Category;
 use App\Models\Job\Application;
 use Illuminate\Support\Facades\Hash;
-
+use File;
 
 
 
@@ -225,14 +225,25 @@ class AdminsController extends Controller
 
 
 
-            //Request()->validate([
+            Request()->validate([
 
-            //    "name" => "required|max:40",
-            //    "email" => "required|max:40",
-
-            //    "password" => "required",
-
-            //]);
+               "job_title" => "required|max:40",
+               "job_region" => "required|max:40",
+               "company" => "required",
+               "job_type" => "required",
+               "vacancy" => "required",
+               "experience" => "required",
+               "salary" => "required",
+               "gender" => "required",
+               "application_deadline" => "required",
+               "job_description" => "required",
+               "responsibilities" => "required",
+               "education_experience" => "required",
+               "otherbenifits" => "required",
+               "category" => "required",
+               "image" => "required",
+            
+            ]);
 
 
 
@@ -274,6 +285,30 @@ class AdminsController extends Controller
         }
          
 
+
+
+
+         
+    public function  deleteJobs($id){
+
+           
+         $deleteJob = Job::find($id);
+
+         if(File::exists(public_path('assets/images/' .$deleteJob->image))) {
+
+            File::delete(public_path('assets/images/' .$deleteJob->image));
+        }
+
+        $deleteJob->delete();
+
+        if($deleteJob){
+
+            return redirect('admin/display-jobs/')->with('delete', 'Job deleted successfully');
+        }
+    }
+
+
+        
        
 }
 
