@@ -20,12 +20,13 @@ class Job extends Model
         'vacancy',
         'experience',
         'salary',
-        'Gender',
+        'gender',
         'application_deadline',
         'job_description',
         'responsibilities',
         'education_experience',
         'otherbenifits',
+        'category',
         'image',
 
     ];
