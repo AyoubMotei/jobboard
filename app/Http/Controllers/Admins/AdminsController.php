@@ -66,6 +66,15 @@ class AdminsController extends Controller
     }
 
 
+    public function createCategories(){
+
+
+        return view("admins.create-categories");
+    }
+
+
+
+    
 
     
     public function storeAdmins(Request $request){
@@ -99,6 +108,35 @@ class AdminsController extends Controller
     }
 
 
+
+
+
+    public function storeCategories(Request $request){
+
+
+
+        Request()->validate([
+
+            "name" => "required|max:40",
+            
+        ]);
+
+        
+        $createCategory = Category::create([
+            'name' => $request->name,
+           
+        ]);
+
+
+      
+        if($createCategory){
+
+            return redirect('admin/display-categories')->with('create', 'Category created successfully');
+        }
+
+
+    }
+
     public function displayCategories(){
 
 
@@ -107,5 +145,42 @@ class AdminsController extends Controller
         return view("admins.display-categories", compact('categories'));
     }
     
+
+
+    public function editCategories($id){
+
+        $category = Category::find($id);
+
+        return view("admins.edit-categories", compact('category'));
+    }
+
     
+    
+
+    public function updateCategories(Request $request ,$id){
+
+        Request()->validate([
+
+            "name" => "required|max:40",
+            
+
+        ]);
+
+        $categoryUpdate = Category::find($id);
+        $categoryUpdate->update([
+            "name" => $request->name,
+            
+
+        ]);
+    
+
+        if($categoryUpdate){
+
+            return redirect('/admin/display-categories/')->with('update', 'Category updated successfully');
+        }
+
+    }
+
+
+
 }
