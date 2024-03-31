@@ -81,5 +81,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function(){
     Route::post('/create-admins', [App\Http\Controllers\Admins\AdminsController::class, 'storeAdmins'])->name('store.admins');
 
    
-    
+    Route::get('/display-categories', [App\Http\Controllers\Admins\AdminsController::class, 'displayCategories'])->name('display.categories');
+
 });
