@@ -202,7 +202,7 @@
 
                     @foreach($categories as $category)
 
-                    <li class="mb-2"><a class="text-decoration-none" href="{{ route('categories.single', $category->name) }}"> {{ $category->name }} </a> </li>
+                    <li class="mb-2"><a class="text-decoration-none" href="{{ route('categories.single', $category->name) }}"> {{ $category->name }}  ({{ $category->total }})</a> </li>
 
 
                     @endforeach
