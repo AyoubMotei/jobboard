@@ -10,9 +10,11 @@ use App\Models\Job\JobSaved;
 use App\Models\Job\Application;
 use App\Models\Job\Search;
 use Auth;
+use DB;
 
 class JobsController extends Controller
 {
+
     public function single($id){
 
 
@@ -20,7 +22,7 @@ class JobsController extends Controller
 
         //getting related jobs  
 
-        $relatedJobs = Job ::where('category', $job->category )
+        $relatedJobs = Job::where('category', $job->category)
         ->where('id','!=' , $id)
         ->take(5)
         ->get();
@@ -33,8 +35,11 @@ class JobsController extends Controller
         //categories
     
     
-        $categories = category::all();
-
+        $categories = DB::table('categories')
+        ->join('jobs','jobs.category', '=', 'categories.name')
+        ->select('categories.name AS name', "categories.id AS id", DB::raw('COUNT(jobs.category) AS total'))
+        ->groupBy('jobs.category')
+        ->get();
 
 
         //save job
@@ -64,7 +69,7 @@ class JobsController extends Controller
     }
     
  }
-            
+    
 
     public function saveJob(Request $request){
 
@@ -91,7 +96,7 @@ class JobsController extends Controller
     public function jobApply(Request $request){
 
 
-            if($request->cv == 'No cv'){
+            if(Auth::user()->cv == 'No cv'){
 
                 return redirect('/jobs/single/'.$request ->job_id.'')->with('apply', 'upload your CV first in the profile page');
 
@@ -99,9 +104,10 @@ class JobsController extends Controller
 
                 $applyJob = Application::create([
 
-                'cv' => Auth::user()->cv,
+                     'cv' => Auth::user()->cv,
                     'job_id' => $request ->job_id,
                     'user_id' => Auth::user()->id,
+                    'email' => Auth::user()->email,
                     'job_image' => $request ->job_image,
                     'job_title' => $request ->job_title,
                     'job_region' => $request ->job_region,
