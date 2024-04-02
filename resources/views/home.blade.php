@@ -8,8 +8,8 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-12">
             <div class="mb-5 text-center">
-              <h1 class="text-white font-weight-bold">The Easiest Way To gGet Your Dream Job</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est, consequuntur perferendis.</p>
+              <h1 class="text-white font-weight-bold">The Easiest Way To Get Your Dream Job</h1>
+              <p>Discover exciting career opportunities that match your skills and ambitions.</p>
             </div>
             <form method="post" action="{{ route('search.job') }}" class="search-jobs-form">
               @csrf
@@ -66,7 +66,7 @@
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
             <h2 class="section-title mb-2 text-white">JobBoard Site Stats</h2>
-            <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde officiis recusandae sequi excepturi corrupti.</p>
+            <p class="lead text-white">Join thousands of job seekers and companies already using JobBoard to find their perfect match.</p>
           </div>
         </div>
         <div class="row pb-0 block__19738 section-counter">
@@ -144,7 +144,7 @@
         <div class="row align-items-center">
           <div class="col-md-8">
             <h2 class="text-white">Looking For A Job?</h2>
-            <p class="mb-0 text-white lead">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora adipisci impedit.</p>
+            <p class="mb-0 text-white lead">Explore exciting job opportunities and unlock your potential with us.</p>
           </div>
           <div class="col-md-3 ml-auto">
             <a href="#" class="btn btn-warning btn-block btn-lg">Sign Up</a>
@@ -162,7 +162,7 @@
             <div class="row justify-content-center">
               <div class="col-md-7">
                 <h2 class="section-title mb-2">Company We've Helped</h2>
-                <p class="lead">Porro error reiciendis commodi beatae omnis similique voluptate rerum ipsam fugit mollitia ipsum facilis expedita tempora suscipit iste</p>
+                <p class="lead">Explore some of the companies that have found success with JobBoard.</p>
               </div>
             </div>
             
@@ -206,7 +206,7 @@
             <div class="row">
               <div class="col-lg-6 align-self-center text-center text-lg-left">
                 <blockquote>
-                  <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
+                  <p>&ldquo;I've been thoroughly impressed by the efficiency and user-friendly interface of this platform. It's made my job search much simpler and more organized.&rdquo;</p>
                   <p><cite> &mdash; Corey Woods, @Dribbble</cite></p>
                 </blockquote>
               </div>
@@ -220,7 +220,7 @@
             <div class="row">
               <div class="col-lg-6 align-self-center text-center text-lg-left">
                 <blockquote>
-                  <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
+                  <p>&ldquo;This job board has been instrumental in connecting us with top-tier talent. The quality of candidates we've received through the platform has exceeded our expectations.&rdquo;</p>
                   <p><cite> &mdash; Chris Peters, @Google</cite></p>
                 </blockquote>
               </div>
@@ -239,7 +239,7 @@
         <div class="row">
           <div class="col-md-6 align-self-center text-center text-md-left mb-5 mb-md-0">
             <h2 class="text-white">Get The Mobile Apps</h2>
-            <p class="mb-5 lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora adipisci impedit.</p>
+            <p class="mb-5 lead text-white">Download our mobile apps to access job listings on the go.</p>
             <p class="mb-0">
               <a href="#" class="btn btn-dark btn-md px-4 border-width-2"><span class="icon-apple mr-3"></span>App Store</a>
               <a href="#" class="btn btn-dark btn-md px-4 border-width-2"><span class="icon-android mr-3"></span>Play Store</a>

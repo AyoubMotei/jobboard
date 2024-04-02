@@ -70,13 +70,13 @@
           <div class="col-lg-5 ml-auto">
             <div class="p-4 mb-3 bg-white">
               <p class="mb-0 font-weight-bold">Address</p>
-              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <p class="mb-4">123 Imaginary Ave. Silicon Valley, San Francisco, California, USA</p>
 
               <p class="mb-0 font-weight-bold">Phone</p>
               <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
 
               <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+              <p class="mb-0"><a href="#">contact@jobboard.coms</a></p>
 
             </div>
           </div>
@@ -95,7 +95,7 @@
           <div class="col-lg-6">
             <div class="block__87154 bg-white rounded">
               <blockquote>
-                <p>&ldquo;Ipsum harum assumenda in eum vel eveniet numquam cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit&rdquo;</p>
+                <p>&ldquo;JobBoard has been an invaluable resource in my job search journey. Their platform provided me with numerous job listings tailored to my skills and preferences. I'm grateful for their assistance in finding the perfect opportunity for me.&rdquo;</p>
               </blockquote>
               <div class="block__91147 d-flex align-items-center">
                 <figure class="mr-4"><img src="{{asset('assets/images/person_2.jpg')}}" alt="Image" class="img-fluid"></figure>
@@ -110,7 +110,7 @@
           <div class="col-lg-6">
             <div class="block__87154 bg-white rounded">
               <blockquote>
-                <p>&ldquo;Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit&rdquo;</p>
+                <p>&ldquo;Working with JobBoard was a game-changer for me. Their platform connected me with amazing opportunities, and their support team was incredibly helpful throughout the process. Highly recommend!&rdquo;</p>
               </blockquote>
               <div class="block__91147 d-flex align-items-center">
                 <figure class="mr-4"><img src="{{asset('assets/images/person_2.jpg')}}" alt="Image" class="img-fluid"></figure>

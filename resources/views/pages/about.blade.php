@@ -22,7 +22,7 @@
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
             <h2 class="section-title mb-2 text-white">JobBoard Site Stats</h2>
-            <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde officiis recusandae sequi excepturi corrupti.</p>
+            <p class="lead text-white">Join thousands of job seekers and companies already using JobBoard to find their perfect match.</p>
           </div>
         </div>
         <div class="row pb-0 block__19738 section-counter">
@@ -72,8 +72,8 @@
           </div>
           <div class="col-lg-5 ml-auto">
             <h2 class="section-title mb-3">JobBoard For Freelancers, Web Developers</h2>
-            <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
-            <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit!</p>
+            <p class="lead">Empower your freelance career or web development journey with our comprehensive job board platform. Discover countless opportunities and unlock your full potential in the digital landscape.</p>
+            <p>Explore new horizons and seize every chance for growth and success. Join our vibrant community of freelancers and web developers today and embark on a rewarding path towards your professional goals!</p>
           </div>
         </div>
       </div>
@@ -90,8 +90,8 @@
           </div>
           <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
             <h2 class="section-title mb-3">JobBoard For Workers</h2>
-            <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
-            <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit!</p>
+            <p class="lead">Discover endless opportunities for workers on our versatile job board platform. Whether you're seeking part-time gigs or full-time employment, we've got you covered. Find your dream job and take the next step in your career journey.</p>
+            <p>Unlock a world of possibilities and experience the satisfaction of finding the perfect job fit. With our user-friendly interface and comprehensive job listings, your job search just got easier. Join us today and start building the future you deserve!</p>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
           <div class="col-md-6">
             <h3>Elisabeth Smith</h3>
             <p class="text-muted">Creative Director</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p>Passionate, innovative, and dedicated, Elisabeth Smith serves as our esteemed Creative Director, bringing unparalleled expertise to our team. With a keen eye for detail and a flair for creativity, Elisabeth leads our design initiatives with finesse and precision.</p>
             <div class="social mt-4">
               <a href="#"><span class="icon-facebook"></span></a>
               <a href="#"><span class="icon-twitter"></span></a>
@@ -131,7 +131,7 @@
           <div class="col-md-6">
             <h3>Chintan Patel</h3>
             <p class="text-muted">Creative Director</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
+            <p>A visionary leader with a passion for innovation, Chintan Patel brings invaluable expertise to the role of Creative Director. His strategic approach and creative mindset drive our team towards excellence, ensuring every project exceeds expectations.</p>
             <div class="social mt-4">
               <a href="#"><span class="icon-facebook"></span></a>
               <a href="#"><span class="icon-twitter"></span></a>
