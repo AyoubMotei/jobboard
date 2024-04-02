@@ -38,7 +38,7 @@
                             <th scope="row">1</th>
                             <td><a class="btn btn-success" href="{{ asset('assets/cvs/'.$app->cv.'') }}">CV</a></td>
                             <td>{{ $app->email }}</td>
-                            <td><a class="btn btn-success" href="{{ route('single.job', $app->id) }}">Go to Job</a></td>
+                            <td><a class="btn btn-success" href="{{ route('single.job', $app->job_id) }}">Go to Job</a></td>
                             <td>{{ $app->job_title }}</td>
                             <td>{{ $app->company }}</td>
                             <td><a href="{{ route('delete.apps', $app->id)}}" class="btn btn-danger  text-center ">delete</a></td>
